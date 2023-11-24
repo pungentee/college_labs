@@ -1,16 +1,15 @@
 #include <iostream>
 
-int main() {
-    int number = 0, count = 0, sum = 0;
-    do {
-        std::cout << "Enter a number: ";
-        std::cin >> number;
-        count++;
-        if (number >= -4 && number < 11) {
-            sum += number;
-        }
-    } while ((number < 100 || number > 999) && (number > -100 || number < -999));
+using namespace std;
 
-    std::cout << "Amount of numbers: " << count << std::endl;
-    std::cout << "Sum of numbers in [-4;11): " << sum << std::endl;
+int main() {
+    int num = 0, c = 0, s = 0;
+    while ((num < 100 || num > 999) && (num > -100 || num < -999)) {
+        cout << "Enter a number: ";
+        cin >> num;
+        c++;
+        if (num >= -4 && num < 11) s += num;
+    }
+    cout << "Amount of numbers: " << c << endl;
+    cout << "Sum of numbers in [-4;11): " << s << endl;
 }

@@ -1,26 +1,27 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    int number = 0;
+    int num = 0;
     do {
-        int sum = 0, temp = 0;
+        int s = 0, h;
 
-        std::cout << "Enter a number (to exit from program enter 0): ";
-        std::cin >> number;
-        temp = number;
+        cout << "Enter a number (to exit program enter 0): ";
+        cin >> num;
+        h = num;
 
-        if (temp == 0) {
+        if (h == 0) {
             break;
-        } else if (temp < 10 && temp > -10) {
-            sum = temp;
+        } else if (h < 10 && h > -10) {
+            s = h;
         } else {
-            while (temp > 0) {
-                sum += temp % 10;
-                temp /= 10;
+            while (h > 0) {
+                s += h % 10;
+                h /= 10;
             }
         }
 
-        std::cout << sum << std::endl;
-    } while (number != 0);
-    return 0;
+        cout << s << endl;
+    } while (num != 0);
 }
