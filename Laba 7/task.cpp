@@ -48,7 +48,7 @@ int main() {
     srand(time(0));
 
     int randomNumber = std::rand() % 1000;
-    std::cout << "**Generated number: " << randomNumber << "** // it will be deleted" << std::endl << std::endl;  // TODO: deleted it
+    std::cout << "Generated number: " << randomNumber << " // it will be deleted" << std::endl << std::endl;  // TODO: deleted it
 
     int userNumber = 0;
     bool isWin = false;
@@ -80,10 +80,6 @@ int main() {
             // checking for how much digits have same position
             if (randomDigitsArray.at(i) == userDigitsArray.at(i)) {
                 matchedPosition++;
-            }
-            if (randomDigitsArray.at(i) != userDigitsArray.at(i)) {
-                isWin = false;
-                break;
             }
         }
 
