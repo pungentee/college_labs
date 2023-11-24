@@ -59,7 +59,7 @@ int main() {
 
     std::cout << "Guess the " << numberLength << "-digit number" << std::endl << std::endl;
 
-    do {
+    while (!isWin) {
         int guessed = 0;          // counting digits that contains in random number
         int matchedPosition = 0;  // counting digits that have same position
 
@@ -81,6 +81,10 @@ int main() {
             if (randomDigitsArray.at(i) == userDigitsArray.at(i)) {
                 matchedPosition++;
             }
+            if (randomDigitsArray.at(i) != userDigitsArray.at(i)) {
+                isWin = false;
+                break;
+            }
         }
 
         std::cout << "Guessed: " << guessed << "\tMatched position: " << matchedPosition << std::endl;
@@ -93,8 +97,7 @@ int main() {
                 break;
             }
         }
-
-    } while (!isWin);
+    }
 
     std::cout << std::endl << "You guessed the number " << randomNumber << std::endl;
 }
