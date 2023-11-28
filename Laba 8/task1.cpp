@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 #include <vector>
 
@@ -25,7 +26,7 @@ int main() {
 
         std::cout << "Random numbers: ";
         for (auto j : randomNumbers) {
-            printf("%2d ", j);
+            std::cout << std::setw(3) << j;
         }
         std::cout << std::endl;
 
