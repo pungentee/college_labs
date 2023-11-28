@@ -1,4 +1,5 @@
 .vscode
 build/*
+notForMe/
 
 .DS_Store
