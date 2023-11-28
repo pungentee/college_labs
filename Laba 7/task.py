@@ -17,9 +17,9 @@ getArrayOfDigits = lambda number: list(map(lambda item: int(item), str(number)))
 
 randomNumber: int = random.randint(0, 999)
 userNumber: int = 0
-isWin = False
-numberLength = getAmountOfDigits(randomNumber)
-randomDigitsArray = getArrayOfDigits(randomNumber)
+isWin: bool = False
+numberLength: list = getAmountOfDigits(randomNumber)
+randomDigitsArray: list = getArrayOfDigits(randomNumber)
 
 print(f"Generated number: {randomNumber} // it will be deleted \n")
 print(f"Guess the {numberLength}-digit number \n")
@@ -27,7 +27,8 @@ print(f"Guess the {numberLength}-digit number \n")
 while not isWin:
     guessed: int = 0
     matchedPosition: int = 0
-    userNumber = input("Enter your option: ")
+    userNumber: str = input("Enter your option: ")
+    userDigitsArray: list = []
 
     if numberLength != getAmountOfDigits(userNumber):
         print("Invalid input")
