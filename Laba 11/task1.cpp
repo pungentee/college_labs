@@ -16,7 +16,6 @@ int main() {
         int arr1[n], arr2[n], *ptr;
 
         // заповнюємо масиви
-
         for (int j = 0; j < n; j++) {
             int elem = rand() % 99 + 1;
             arr1[j] = elem;
