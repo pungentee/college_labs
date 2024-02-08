@@ -12,3 +12,6 @@ all:
 
 clear:
 	@rm -rf ./build/*
+
+run:
+	@$(BUILD)
