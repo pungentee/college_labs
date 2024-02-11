@@ -21,7 +21,7 @@ int main() {
         }
     }
 
-    int *arrAbs     = new int[countAbsElems];
+    int *arrAbs = new int[countAbsElems];
     int indexAbsArr = 0;
     for (int i = 0; i < n; i += 1) {
         int elem = arr[i];
