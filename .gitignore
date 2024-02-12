@@ -1,5 +1,7 @@
 .vscode
-build/*
+
 notForMe/
+Algorithms/build/*
+Programming/build/*
 
 .DS_Store
