@@ -11,8 +11,6 @@ int main() {
         std::cout << "Enter symbol: ";
         std::cin >> symbol;
 
-        std::cout << symbol << std::endl;
-
         if (symbol == "a" || symbol == "A" || symbol == "а" || symbol == "А") {
             count += 1;
         }
