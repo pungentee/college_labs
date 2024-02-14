@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    srand(time(0));
+    srand(time(NULL));
 
     int n = 0, m = 0;
     cout << "Enter matrix size (n * m): ";
@@ -69,6 +69,15 @@ int main() {
         }
         cout << endl;
     }
+
+    for (int i = 0; i < m; i++) {
+        delete[] arr[i];
+    }
+    for (int i = 0; i < countZerosRows; i++) {
+        delete[] arr2[i];
+    }
+    delete[] arr;
+    delete[] arr2;
 
     return 0;
 }
