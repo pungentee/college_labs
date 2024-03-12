@@ -31,7 +31,7 @@ KeepEmptyLinesAtTheStartOfBlocks: 'false'
 Language: Cpp
 NamespaceIndentation: All
 PointerAlignment: Left
-ReflowComments: 'true'
+ReflowComments: 'false'
 SortIncludes: 'false'
 SpaceAfterCStyleCast: 'true'
 SpaceAfterLogicalNot: 'false'
