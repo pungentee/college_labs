@@ -1,7 +1,7 @@
 #include <iostream>
-#include <vector>
-#include <string>
 #include <map>
+#include <string>
+#include <vector>
 
 std::vector<std::string> split(const std::string& str, const char delimiter) {
     std::vector<std::string> sub_strs;
@@ -38,9 +38,9 @@ void fill(std::string& str, std::map<std::string, std::string>& keys) {
             if (!value.empty()) {
                 str.replace(first_bracket, key_length + 2, value);
 
-                int colision = value.length() - (key_length + 2);
-                len += colision;
-                i += colision;
+                int collision = value.length() - (key_length + 2);
+                len += collision;
+                i += collision;
             }
         }
     }
@@ -50,10 +50,10 @@ int main(void) {
     std::string values;
     std::getline(std::cin, values);
 
-    std::vector<std::string> values_splited = split(values, ',');
+    std::vector<std::string> values_splitted = split(values, ',');
 
     std::map<std::string, std::string> values_map;
-    for (const std::string& pair_str : values_splited) {
+    for (const std::string& pair_str : values_splitted) {
         std::vector<std::string> pair = split(pair_str, '=');
         values_map[pair[0]] = pair[1];
     }
