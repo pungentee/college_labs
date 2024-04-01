@@ -2,9 +2,10 @@ CC= clang++
 FLAGS=-g -O0 -Wall -Wextra -std=c++11
 
 # ------------------------------------------------------------------
-SUBJECT=Programming# Algorithms/Programming
-LAB_NUM=16
-TASK_NUM=1
+# Algorithms/Programming
+SUBJECT=Programming
+LAB_NUM=18
+TASK_NUM=3
 # ------------------------------------------------------------------
 LAB_DIR=./$(SUBJECT)/Laba $(LAB_NUM)
 SOURCE=$(LAB_DIR)/task$(TASK_NUM).cpp
