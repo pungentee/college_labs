@@ -3,9 +3,9 @@ FLAGS=-g -O0 -Wall -Wextra -std=c++11
 
 # ------------------------------------------------------------------
 # Algorithms/Programming
-SUBJECT=Programming
-LAB_NUM=18
-TASK_NUM=3
+SUBJECT=Algorithms
+LAB_NUM=4-5
+TASK_NUM=1
 # ------------------------------------------------------------------
 LAB_DIR=./$(SUBJECT)/Laba $(LAB_NUM)
 SOURCE=$(LAB_DIR)/task$(TASK_NUM).cpp
@@ -21,3 +21,8 @@ all:
 
 clear:
 	@rm -rf ./$(BUILD_DIR)/*
+
+run: all
+	@echo
+	@./$(EXEC)
+
