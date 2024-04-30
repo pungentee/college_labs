@@ -17,8 +17,9 @@ all:
 	@mkdir -p $(BUILD_DIR)
 	@$(CC) $(FLAGS) "$(SOURCE)" -o ./build/main
 	@echo "Compiled successfully!"
-	@./$(EXEC)
 
 clear:
 	@rm -rf ./$(BUILD_DIR)
 
+run: all
+	@./$(EXEC)
