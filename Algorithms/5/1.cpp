@@ -3,11 +3,20 @@
 #include <iostream>
 #include <vector>
 
-int linearSearch(std::vector<int> vec, int key) {
-    for (size_t i = 0; i < vec.size(); i++) {
-        if (vec[i] == key) return i;
+int binary_search(const std::vector<int> &vec, const int &key) {
+    int begin = 0, end = vec.size(), i;
+    bool is_found = false;
+    while ((begin < end) && !is_found) {
+        i = (begin + end) / 2;
+        if (vec[i] == key)
+            is_found = true;
+        else if (vec[i] < key)
+            begin = i + 1;
+        else
+            end = i - 1;
     }
-    return -1;
+    if (is_found == false) i = -1;
+    return i;
 }
 
 bool is_repeated(std::vector<int> vec, int key, int times) {
@@ -27,15 +36,15 @@ std::vector<int> repeated_in_both(std::vector<int> vec1, std::vector<int> vec2) 
     std::vector<int> checked;
     std::vector<int> result;
 
-    for (size_t i = 0; i < vec1.size(); i++) {
-        if (linearSearch(checked, vec1[i]) != -1) {
+    for (int i : vec1) {
+        if (binary_search(checked, i) != -1) {
             continue;
         }
-        if (is_repeated(vec1, vec1[i], 2) && is_repeated(vec2, vec1[i], 2)) {
-            result.push_back(vec1[i]);
+        if (is_repeated(vec1, i, 2) && is_repeated(vec2, i, 2)) {
+            result.push_back(i);
         }
 
-        checked.push_back(vec1[i]);
+        checked.push_back(i);
     }
     return result;
 }
@@ -51,6 +60,9 @@ int main() {
         vec1.push_back(rand() % 11);
         vec2.push_back(rand() % 11);
     }
+
+    std::sort(vec1.begin(), vec1.end());
+    std::sort(vec2.begin(), vec2.end());
 
     std::cout << "First: ";
     for (const int i : vec1) {

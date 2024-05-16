@@ -3,8 +3,8 @@ FLAGS=-g -O0 -Wall -Wextra -std=c++20
 
 # ------------------------------------------------------------------
 # Algorithms/Programming
-SUBJECT=Programming
-LAB_NUM=21
+SUBJECT=Algorithms
+LAB_NUM=5
 TASK_NUM=1
 
 SOURCE=./$(SUBJECT)/$(LAB_NUM)/$(TASK_NUM).cpp
