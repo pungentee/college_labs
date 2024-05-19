@@ -2,6 +2,7 @@
 .idea/
 
 notForMe/
-build/*
+**/build/*
+
 
 .DS_Store
