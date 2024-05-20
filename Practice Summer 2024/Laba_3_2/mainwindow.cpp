@@ -2,6 +2,8 @@
 
 #include "./ui_mainwindow.h"
 
+#include "dialog.h"
+
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
 }
@@ -15,6 +17,15 @@ void MainWindow::on_result_clicked() {
     QString seasonName;
 
     int month_num = ui->month_in->value();
+
+    if(month_num < 1 || month_num > 12) {
+        MainWindow::on_clear_clicked();
+
+        Dialog dialog;
+        dialog.exec();
+
+        return;
+    }
 
     switch(month_num) {
         case 1:
