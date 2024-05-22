@@ -23,6 +23,8 @@ class MainWindow : public QMainWindow {
 
     void on_random_check_toggled(bool checked);
 
+    void on_clear_btn_clicked();
+
    private:
     Ui::MainWindow *ui;
 };

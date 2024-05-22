@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>659</width>
-    <height>175</height>
+    <height>238</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,109 +16,69 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_6">
-        <property name="text">
-         <string>Студент №2</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QLineEdit" name="lineEdit_2_1"/>
-      </item>
-      <item row="0" column="2">
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>Хімія</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="3">
-       <widget class="QLineEdit" name="lineEdit_1_3"/>
-      </item>
-      <item row="2" column="2">
-       <widget class="QLineEdit" name="lineEdit_2_2"/>
-      </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="label">
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLineEdit" name="lineEdit_1_2"/>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_5">
-        <property name="text">
-         <string>Студент №1</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="3">
-       <widget class="QLabel" name="label_4">
-        <property name="text">
-         <string>Біологія</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_7">
-        <property name="text">
-         <string>Студент №3</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="2">
-       <widget class="QLineEdit" name="lineEdit_3_2"/>
-      </item>
-      <item row="3" column="3">
-       <widget class="QLineEdit" name="lineEdit_3_3"/>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>Математика</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="lineEdit_1_1"/>
-      </item>
-      <item row="2" column="3">
-       <widget class="QLineEdit" name="lineEdit_2_3"/>
-      </item>
-      <item row="3" column="1">
-       <widget class="QLineEdit" name="lineEdit_3_1"/>
-      </item>
-      <item row="0" column="4">
-       <widget class="QLabel" name="label_8">
-        <property name="text">
-         <string>Середній бал</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="4">
-       <widget class="QLabel" name="mean_1">
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="4">
-       <widget class="QLabel" name="mean_2">
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="4">
-       <widget class="QLabel" name="mean_3">
-        <property name="text">
-         <string/>
-        </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QTableWidget" name="marks">
+        <row>
+         <property name="text">
+          <string>Студент №1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Студент №2</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Студент №3</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Студент №4</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Математика</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Хімія</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Біологія</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Середній бал</string>
+         </property>
+        </column>
+        <item row="0" column="3">
+         <property name="flags">
+          <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+         </property>
+        </item>
+        <item row="1" column="3">
+         <property name="flags">
+          <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+         </property>
+        </item>
+        <item row="2" column="3">
+         <property name="flags">
+          <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+         </property>
+        </item>
+        <item row="3" column="3">
+         <property name="flags">
+          <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+         </property>
+        </item>
        </widget>
       </item>
      </layout>

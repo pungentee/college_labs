@@ -14,11 +14,7 @@ void MainWindow::on_Calculate_clicked() {
     auto interest_rate_per_month = ui->interest_rate_edit->toPlainText().toDouble() / 12;
     auto storage_period = ui->storage_period_edit->toPlainText().toDouble();
 
-    double profit = 0;
-
-    for(int i = 0; i < storage_period; i++) {
-        profit += sum / 100 * (interest_rate_per_month);
-    }
+    double profit = sum / 100 * (interest_rate_per_month) * storage_period;
 
     ui->profit_value->setText(QString::number(profit));
     ui->total_sum_value->setText(QString::number(sum + profit));
