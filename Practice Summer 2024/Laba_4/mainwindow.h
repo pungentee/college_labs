@@ -19,19 +19,19 @@ class MainWindow : public QMainWindow {
    private slots:
     void on_west_clicked();
 
-    void on_victoria_clicked();
-
-    void on_new_south_clicked();
-
-    void on_south_clicked(bool checked);
-
-    void on_queen_clicked(bool checked);
-
     void on_north_clicked();
 
-    void on_capital_clicked(bool checked);
+    void on_queen_clicked();
 
-    void on_tasmania_clicked(bool checked);
+    void on_south_clicked();
+
+    void on_newsouth_clicked();
+
+    void on_capital_clicked();
+
+    void on_victoria_clicked();
+
+    void on_tasmania_clicked();
 
    private:
     Ui::MainWindow *ui;

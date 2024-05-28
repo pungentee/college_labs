@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>306</width>
-    <height>355</height>
+    <height>288</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -71,7 +71,14 @@
      </widget>
     </item>
     <item>
-     <widget class="QTextBrowser" name="timetable"/>
+     <widget class="QTextBrowser" name="timetable">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

@@ -24,14 +24,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         images.qrc
-        west.h west.cpp west.ui
-        victoria.h victoria.cpp victoria.ui
-        new_south.h new_south.cpp new_south.ui
-        south.h south.cpp south.ui
-        queensland.h queensland.cpp queensland.ui
-        north.h north.cpp north.ui
-        capital.h capital.cpp capital.ui
-        tasmania.h tasmania.cpp tasmania.ui
+        area.h area.cpp area.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Laba_4 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
