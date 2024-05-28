@@ -14,8 +14,10 @@ void MainWindow::on_calculate_clicked() {
     int amount = 0;
 
     for (auto number : numbers) {
-        sum += number.toDouble();
-        amount += 1;
+        if (number.toDouble() > 0) {
+            sum += number.toDouble();
+            amount += 1;
+        }
     }
 
     ui->Mean_out->setText(QString::number(sum / amount));

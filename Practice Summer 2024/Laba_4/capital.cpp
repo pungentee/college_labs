@@ -2,8 +2,6 @@
 
 #include "ui_capital.h"
 
-
-
 Capital::Capital(QWidget *parent) : QDialog(parent), ui(new Ui::Capital) { ui->setupUi(this); }
 
 Capital::~Capital() { delete ui; }
